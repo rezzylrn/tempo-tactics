@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tempo Tactics — multiplayer turn-based strategy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">TT</span>
+    <div>
+      <h1>Tempo Tactics</h1>
+      <p class="tagline">Small multiplayer turn-based strategy. Hold the beacon or eliminate your rivals.</p>
+    </div>
+  </div>
+  <div class="top-links">
+    <a href="https://github.com/rezzylrn/tempo-tactics" target="_blank" rel="noopener">Repo + API docs</a>
+  </div>
+</header>
+
+<main>
+  <!-- Lobby -->
+  <section id="lobby" class="panel">
+    <h2>Play</h2>
+    <div class="lobby-grid">
+      <div class="lobby-card">
+        <h3>New game</h3>
+        <label>Players
+          <select id="numPlayers">
+            <option value="2" selected>2 players</option>
+            <option value="3">3 players</option>
+            <option value="4">4 players</option>
+          </select>
+        </label>
+        <label>Your name
+          <input id="hostName" type="text" maxlength="24" placeholder="Player 1">
+        </label>
+        <button id="btnCreate" class="btn primary">Create game</button>
+        <p class="hint">Share the 4-letter game code with friends. Empty seats can be filled by bots.</p>
+      </div>
+      <div class="lobby-card">
+        <h3>Join a game</h3>
+        <label>Game code
+          <input id="joinCode" type="text" maxlength="4" placeholder="e.g. K7Q2" class="code-input">
+        </label>
+        <label>Your name
+          <input id="joinName" type="text" maxlength="24" placeholder="Player 2">
+        </label>
+        <button id="btnJoin" class="btn primary">Join game</button>
+        <p class="hint">Open games are also listed below.</p>
+      </div>
+      <div class="lobby-card">
+        <h3>Quick game vs bot</h3>
+        <p class="hint">Jump straight into a 2-player match against the sample bot. No setup.</p>
+        <button id="btnQuick" class="btn accent">Play vs bot now</button>
+      </div>
+    </div>
+    <h3 class="list-title">Open games</h3>
+    <div id="gameList" class="game-list"><p class="hint">Loading…</p></div>
+  </section>
+
+  <!-- Game -->
+  <section id="game" class="panel hidden">
+    <div class="game-head">
+      <div>
+        <h2>Game <span id="gameCode" class="code"></span></h2>
+        <p id="gameStatus" class="hint"></p>
+      </div>
+      <div class="game-actions">
+        <button id="btnEndTurn" class="btn primary">End turn</button>
+        <button id="btnLeave" class="btn">Leave</button>
+      </div>
+    </div>
+    <div id="banner" class="banner hidden"></div>
+    <div class="game-grid">
+      <div class="board-wrap">
+        <div id="board" class="board"></div>
+        <p id="turnHint" class="hint"></p>
+        <div class="replay">
+          <label>Replay
+            <input id="replayRange" type="range" min="0" max="0" value="0" step="1">
+          </label>
+          <span id="replayLabel" class="hint"></span>
+          <button id="btnReplayLive" class="btn small">Back to live</button>
+        </div>
+      </div>
+      <aside class="side">
+        <h3>Players</h3>
+        <ul id="playerList" class="players"></ul>
+        <h3>Match log</h3>
+        <ol id="logList" class="log"></ol>
+        <h3>How to win</h3>
+        <p class="hint">Hold the gold center tile at the end of a full round to earn a beacon point — first to 3 wins. Or destroy every rival unit. Matches end after 60 turns, decided on points, then units, then HP.</p>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Tempo Tactics — original game built for the Taskmarket multiplayer strategy bounty. Rules, API docs and the sample bot are in the <a href="https://github.com/rezzylrn/tempo-tactics" target="_blank" rel="noopener">public repo</a>.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
