@@ -1,0 +1,51 @@
+game created: 12929a0f27 code: SKSY
+player 1: 5eb061ac SampleBot-A
+started. players: SampleBot-A, Bot-2 (bot)
+turn 2: Bot-2 to move | points: SampleBot-A=0, Bot-2=0
+turn 3: SampleBot-A to move | points: SampleBot-A=0, Bot-2=0
+turn 4: Bot-2 to move | points: SampleBot-A=0, Bot-2=0
+turn 5: SampleBot-A to move | points: SampleBot-A=0, Bot-2=0
+turn 6: Bot-2 to move | points: SampleBot-A=0, Bot-2=0
+turn 7: SampleBot-A to move | points: SampleBot-A=0, Bot-2=1
+turn 8: Bot-2 to move | points: SampleBot-A=0, Bot-2=1
+turn 9: SampleBot-A to move | points: SampleBot-A=0, Bot-2=2
+turn 10: Bot-2 to move | points: SampleBot-A=0, Bot-2=2
+turn 10: Bot-2 to move | points: SampleBot-A=0, Bot-2=2
+---
+status: finished | turns played: 10
+winner: Bot-2 | reason: elimination
+--- match log (32 events) ---
+#1 t0 system: Game created. Waiting for 2 players.
+#2 t0 join: SampleBot-A joined the game.
+#3 t0 join: Bot-2 joined the game.
+#4 t1 start: Game started. SampleBot-A moves first.
+#5 t1 move: SampleBot-A moved Scout to (3,3).
+#6 t2 turn: Turn 2: Bot-2 to move.
+#7 t2 move: Bot-2 moved Vanguard to (4,4).
+#8 t2 attack: Bot-2 attacked SampleBot-A's Scout for 2 damage. Unit destroyed.
+#9 t3 turn: Turn 3: SampleBot-A to move.
+#10 t3 move: SampleBot-A moved Scout to (3,3).
+#11 t3 attack: SampleBot-A attacked Bot-2's Vanguard for 1 damage.
+#12 t4 turn: Turn 4: Bot-2 to move.
+#13 t4 attack: Bot-2 attacked SampleBot-A's Scout for 2 damage. Unit destroyed.
+#14 t5 turn: Turn 5: SampleBot-A to move.
+#15 t5 move: SampleBot-A moved Vanguard to (2,2).
+#16 t6 turn: Turn 6: Bot-2 to move.
+#17 t6 move: Bot-2 moved Scout to (3,3).
+#18 t6 attack: Bot-2 attacked SampleBot-A's Vanguard for 1 damage.
+#19 t7 beacon: Bot-2 holds the beacon. Beacon points: 1/3.
+#20 t7 turn: Turn 7: SampleBot-A to move.
+#21 t7 attack: SampleBot-A attacked Bot-2's Scout for 2 damage. Unit destroyed.
+#22 t8 turn: Turn 8: Bot-2 to move.
+#23 t8 move: Bot-2 moved Scout to (3,3).
+#24 t8 attack: Bot-2 attacked SampleBot-A's Vanguard for 1 damage.
+#25 t9 beacon: Bot-2 holds the beacon. Beacon points: 2/3.
+#26 t9 turn: Turn 9: SampleBot-A to move.
+#27 t9 attack: SampleBot-A attacked Bot-2's Scout for 2 damage. Unit destroyed.
+#28 t10 turn: Turn 10: Bot-2 to move.
+#29 t10 move: Bot-2 moved Vanguard to (3,3).
+#30 t10 attack: Bot-2 attacked SampleBot-A's Vanguard for 2 damage. Unit destroyed.
+#31 t10 eliminated: SampleBot-A has no units left and is eliminated.
+#32 t10 end: Bot-2 wins by eliminating all rivals.
+---
+play it back in a browser: https://9a0c4d25588a62.lhr.life/ (game code SKSY)
